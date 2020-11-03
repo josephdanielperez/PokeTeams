@@ -1,6 +1,6 @@
 <h1>Edit Team:</h1>
 
-<form action="/teams/<%= @team.id %>" method="POST">
+<form action="/teams/<%= @team.id %>" method="post">
   <input type="hidden" name="_method" value="patch">
   <label for="name">Name: <input type="text" name="team[name]" id="name" value="<%= @team.name %>"></label><br><br>
   <input type="text" name="team[pokemon_1]" id="pokemon_1" value="<%= @team.pokemon_1%>"><br>
