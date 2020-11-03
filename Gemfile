@@ -13,7 +13,7 @@ gem 'bcrypt'
 gem 'tux'
 gem 'rack-flash3'
 gem 'bootstrap', '~> 4.1.3'
-gem 'bigdecimal', '1.3.5'
+gem 'bigdecimal', '~> 1.3.5'
 
 
 group :test do
