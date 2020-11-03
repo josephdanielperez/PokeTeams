@@ -15,7 +15,7 @@ class UserController < ApplicationController
             session[:user_id] = user.id
             redirect '/users'
         else
-            flash[:message] = "Please fill out all fields to create an account and get started."
+            flash[:message] = "Please fill out each field to create an account and get started."
             redirect '/signup'
         end
     end
