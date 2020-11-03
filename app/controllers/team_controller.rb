@@ -40,7 +40,7 @@ class TeamController < ApplicationController
         @team = Team.find_by_id(params[:id])
 
         if logged_in? && @team.user_id == current_user.id
-            erb :'/teams/edit'
+            erb :'teams/edit'
         else
             flash[:message] = "You are unable to edit teams that others have created."
             redirect '/teams'
@@ -52,7 +52,7 @@ class TeamController < ApplicationController
         if @team.user_id == current_user.id
             @team.update(params[:team])
             @team.save
-            redirect '/teams/#{@team.id]}'
+            redirect "/teams/#{@team.id}"
         else
             redirect '/teams'
         end
