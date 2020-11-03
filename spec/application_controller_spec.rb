@@ -4,6 +4,7 @@ def app
     ApplicationController
 end
 
+
 describe ApplicationController do
     it "responds with a welcome message" do
         get '/'
