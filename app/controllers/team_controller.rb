@@ -42,7 +42,7 @@ class TeamController < ApplicationController
         if logged_in? && @team.user_id == current_user.id
             erb :'/teams/edit'
         else
-            flash[:message] = "You are unable to edit teams that you have not created."
+            flash[:message] = "You are unable to edit teams that others have created."
             redirect '/teams'
         end
     end
