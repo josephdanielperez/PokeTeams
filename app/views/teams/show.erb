@@ -1,0 +1,31 @@
+<h1> <%= @team.name %> </h1>
+<h3>Pokémon Trainer: <a href='/users/<%= @team.user.id %>'><%= @team.user.username %></a></h3>
+<br>
+
+  <h2>Pokémon:</h2>
+
+  <h3><%= @team.pokemon_1 %></h3>
+  <h3><%= @team.pokemon_2 %></h3>
+  <h3><%= @team.pokemon_3 %></h3>
+  <h3><%= @team.pokemon_4 %></h3>
+  <h3><%= @team.pokemon_5 %></h3>
+  <h3><%= @team.pokemon_6 %></h3>
+
+  <br><br><br>
+
+<% if current_user.id == @team.user_id %>
+
+  <button><a href="/teams/<%= @team.id %>/edit">Edit Team</a></button>
+  <br>
+
+  <form action="/teams/<%= @team.id %>/delete" method ="POST">
+    <input id="hidden" type="hidden" name="_method" value="delete">
+    <button>Delete Team</button>
+  </form>
+  <br>
+
+<% end %>
+
+<button><a href="/teams">PokéTeams</a></button>
+<br>
+<button><a href="/users">Home</a></button>
