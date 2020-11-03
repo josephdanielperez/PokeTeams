@@ -1,4 +1,4 @@
-# PokéTeams Sinatra Portfolio Project README
+# PokéTeams Sinatra Portfolio Project - README
 
 # Usage
 PokéTeams is a social website where you can share your favorite teams that have brought you success, challenge team combinations to test your skills, or just those who you think are the cutest. Share your teams with others online and see what everyone else is recommending.
